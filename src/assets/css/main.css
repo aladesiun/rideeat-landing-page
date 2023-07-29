@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-filled {
+        @apply text-white text-[12px] whitespace-nowrap bg-[#FF8900] rounded-[100px] px-2 min-h-[40px] min-w-[154px] border-[1.5px] border-[#FF8900] hover:bg-white hover:text-[#FF8900]
+    }
+    .btn-transparent {
+        @apply bg-white text-[12px] whitespace-nowrap text-[#FF8900] rounded-[100px] px-2 min-h-[40px] min-w-[154px] border-[1.5px] border-[#FF8900] hover:text-white hover:bg-[#FF8900]
+    }
+    .btn-light {
+        @apply text-[#FF8900] text-[12px] whitespace-nowrap bg-[#FEF1EA] rounded-[100px] px-3 min-h-[39px] w-fit border-[1.5px] border-[#FEF1EA] hover:bg-white hover:text-[#FF8900]
+    }
+    .container {
+        @apply w-[90%] mx-auto max-w-[1300px]  
+    }
+    .circle-cont{
+        @apply text-[#FF8900] rounded-[50%] border-[#EBCFAF] border-[2.5px] flex justify-center items-center
+    }
+    .flex-center-all {
+        @apply flex justify-center items-center
+    }
+    .reg-input{
+        @apply   relative border border-[#ada8a3b3] text-black px-4 py-4 rounded-[40px] w-full focus:border-[#FF8900] outline-none placeholder:text-[#B8BCC6]
+    }
+    .reg-input-2{
+        @apply   relative border border-[#ada8a3b3] text-black px-2 py-2 rounded-[40px] w-full focus:border-[#FF8900] outline-none placeholder:text-[#B8BCC6]
+
+    }
+    .rideeat-inp-active {
+      @apply  focus:border-[#FF8900] outline-none
+    }
+    .btn-upload {
+        @apply capitalize text-[#ff8800a7] text-[12px] whitespace-nowrap bg-[#FEF1EA] rounded-[100px] px-3 min-h-[39px] w-fit border-[1.5px] border-[#FEF1EA] hover:bg-white hover:text-[#FF8900]
+    }
+}
